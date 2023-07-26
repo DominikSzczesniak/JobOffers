@@ -1,4 +1,4 @@
-package com.szczesniak.dominik.joboffers.domain;
+package com.szczesniak.dominik.joboffers;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
