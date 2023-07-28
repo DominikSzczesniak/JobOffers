@@ -1,16 +1,13 @@
 package com.szczesniak.dominik.joboffers.domain.offer.dto;
 
-import lombok.Value;
+import lombok.Builder;
 
-@Value
-public class JobOfferResponse {
-
-	String title;
-
-	String company;
-
-	String salary;
-
-	String offerUrl;
+@Builder
+public record JobOfferResponse(
+		String title,
+		String company,
+		String salary,
+		String offerUrl
+) {
 
 }
