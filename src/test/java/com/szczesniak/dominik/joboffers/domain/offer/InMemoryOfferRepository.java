@@ -8,7 +8,7 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class InMemoryOfferRepository implements  OfferRepository {
+public class InMemoryOfferRepository implements OfferRepository {
 
 	private final Map<String, Offer> offers = new ConcurrentHashMap<>();
 
