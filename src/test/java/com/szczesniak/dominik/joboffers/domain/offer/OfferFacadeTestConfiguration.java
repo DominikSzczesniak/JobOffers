@@ -6,6 +6,7 @@ import java.util.List;
 
 public class OfferFacadeTestConfiguration {
 
+
 	private final InMemoryFetcherTestImpl inMemoryFetcherTest;
 	private final InMemoryOfferRepository offerRepository;
 

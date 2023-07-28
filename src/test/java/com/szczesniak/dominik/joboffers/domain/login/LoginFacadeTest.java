@@ -24,7 +24,7 @@ class LoginFacadeTest {
 	@Test
 	void should_register_user() {
 		// given
-		final RegisterUserDto registerUserDto = new RegisterUserDto("username", "password");
+		final RegisterUserDto registerUserDto = new RegisterUserDto(createAnyUsername(), "password");
 
 		// when
 		final RegistrationResultDto register = tut.register(registerUserDto);
@@ -37,7 +37,7 @@ class LoginFacadeTest {
 	@Test
 	void should_find_registered_user_by_username() {
 		// given
-		final RegisterUserDto registerUserDto = new RegisterUserDto("username", "password");
+		final RegisterUserDto registerUserDto = new RegisterUserDto(createAnyUsername(), "password");
 		final RegistrationResultDto register = tut.register(registerUserDto);
 
 		// when
